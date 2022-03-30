@@ -1,4 +1,4 @@
-import java.lang.Thread.sleep
+//import java.lang.Thread.sleep
 
 //val a = 1
 //fun fizz() {
@@ -144,22 +144,22 @@ import java.lang.Thread.sleep
 //    print(primes.take(10).toList())  // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 //}
 
-fun main() {
-    val primes: Sequence<Int> = sequence {
-        var numbers = generateSequence(2) { it + 1 }
-
-        var prime: Int
-        while (true) {
-            prime = numbers.first()
-//            println(prime)
-            yield(prime)
-            numbers = numbers.drop(1)
-                .filter {
-                    println(it to prime)
-                    it % prime != 0
-                }
-        }
-    }
-    print(primes.take(10).toList()); // [2, 3, 5, 6, 7, 8, 9, 10, 11, 12]
-}
+//fun main() {
+//    val primes: Sequence<Int> = sequence {
+//        var numbers = generateSequence(2) { it + 1 }
+//
+//        var prime: Int
+//        while (true) {
+//            prime = numbers.first()
+////            println(prime)
+//            yield(prime)
+//            numbers = numbers.drop(1)
+//                .filter {
+//                    println(it to prime)
+//                    it % prime != 0
+//                }
+//        }
+//    }
+//    print(primes.take(10).toList()); // [2, 3, 5, 6, 7, 8, 9, 10, 11, 12]
+//}
 
