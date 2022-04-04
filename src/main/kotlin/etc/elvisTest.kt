@@ -21,12 +21,14 @@ fun getT(): Int? {
 
 
 fun main() {
-//    val a : Int? =  123
+    val a : Int? =  345
 
 
     val b = getT()
+
         ?:
-        123
+
+        a
 
     println(b)
 }
